@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'huakang';
+  src: url('../public/font/shu_round.TTF');
+  /* need to be ttf can't be ttc  */
+}
+                                                          
+body {
+  font-family: 'huakang';
+  font-size: 40px;
+  color: #38c51c;
+  background: url('../public/image/bg.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.App {
+  text-align: center;
+  cursor : url('../public/image/cursor.png'), auto;
+  /* 尺寸需要32*32 */
+  padding: auto;
+}
+
+
+/*
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+*/
+
+.bg {
+  background-image: url(../public/image/bg.png);
+  background-size: "cover";
+  background-repeat:no-repeat;
+  background-position: center;
+  }
+
+
+.footer {
+    text-align: right;
+    padding: 0px 0px 100px 20px;
+    cursor : url('../public/image/cursor.png'), pointer;
+    margin-top: 200px;
+}
+
+a {
+  padding: 8px;
+}
