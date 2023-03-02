@@ -1,7 +1,7 @@
 ## 下載須知
 
  * 下載後terminal輸入`npm start`
- * 打開：http://localhost:3000，頁面會自動更新
+ * 打開："http://localhost:3000"，頁面會自動更新
  * 從雲端下載所有圖片到public/image
 <!--### `npm test`
 
@@ -64,3 +64,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * shu 推特/YT 連結
 * 背景
 * demo 圖片
+* 字體設定

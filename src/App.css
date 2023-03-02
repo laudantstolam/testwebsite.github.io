@@ -7,7 +7,7 @@
 body {
   font-family: 'huakang';
   font-size: 40px;
-  color: #38c51c;
+  color: #a31cc5;
   background: url('../public/image/bg.png');
   background-repeat: no-repeat;
   background-size:cover;
@@ -45,10 +45,10 @@ body {
 .footer {
     text-align: right;
     padding: 0px 0px 100px 20px;
-    cursor : url('../public/image/cursor.png'), pointer;
     margin-top: 200px;
 }
 
 a {
   padding: 8px;
+  cursor : url('../public/image/cursor2.png'), auto;
 }
