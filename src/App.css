@@ -3,7 +3,11 @@
   src: url('../public/font/shu_round.TTF');
   /* need to be ttf can't be ttc  */
 }
-                                                          
+
+head {
+  margin: 0%;
+}
+
 body {
   font-family: 'huakang';
   font-size: 40px;
@@ -17,7 +21,6 @@ body {
   text-align: center;
   cursor : url('../public/image/cursor.png'), auto;
   /* 尺寸需要32*32 */
-  padding: auto;
 }
 
 
@@ -44,8 +47,8 @@ body {
 
 .footer {
     text-align: right;
-    padding: 0px 0px 100px 20px;
-    margin-top: 200px;
+    padding: 0px 0px 0px 20px;
+    
 }
 
 a {

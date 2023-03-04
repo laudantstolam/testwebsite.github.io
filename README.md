@@ -2,7 +2,6 @@
 
  * 下載後terminal輸入`npm start`
  * 打開："http://localhost:3000"，頁面會自動更新
- * 從雲端下載所有圖片到public/image
 <!--### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -65,3 +64,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * 背景
 * demo 圖片
 * 字體設定
+---
+撰寫邏輯
+* 主要內容都在src/app.js，渲染在App.css
+* firebase相關設定資料再config.js
+* 圖片都在public/image，少數icon在src
+* icannotcode T_T
