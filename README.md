@@ -1,5 +1,6 @@
 ## 下載須知
-
+ * 最新進度都在develop
+ * 可以先從main導入
  * 下載後terminal輸入`npm start`
  * 打開："http://localhost:3000"，頁面會自動更新
 <!--### `npm test`
@@ -58,12 +59,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 -->
 ---
-3/3已更新項目
+### 3/3已更新項目
 * 滑鼠游標>大便
 * shu 推特/YT 連結
 * 背景
 * demo 圖片
 * 字體設定
+---
+### firebase 相關
+* firebase掛載>>但顯示不出來
 ---
 撰寫邏輯
 * 主要內容都在src/app.js，渲染在App.css
