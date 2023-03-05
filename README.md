@@ -1,76 +1,34 @@
 ## 下載須知
- * 最新進度都在develop
- * 可以先從main導入
- * 下載後terminal輸入`npm start`
- * 打開："http://localhost:3000"，頁面會自動更新
-<!--### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 最新進度都在 develop
+- 下載步驟
+  1. 打開 terminal 輸入 `git clone https://github.com/BirShuDeyy2023/what-does-Shu-say.git `
+  - (如果要指定 branch 下載的話在後面加上 -b develop 代表下載 develope 分支上的東西)
+  2. 進入"what-does-shu-say"資料夾輸入`npm install`下載套件
 
-### `npm run build`
+  3. 輸入`npm start`，會自動開啟 http://localhost:3000， 頁面會自動更新
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
--->
 ---
-### 3/3已更新項目
-* 滑鼠游標>大便
-* shu 推特/YT 連結
-* 背景
-* demo 圖片
-* 字體設定
+
+### 3/3 已更新項目
+
+- 滑鼠游標>大便
+- shu 推特/YT 連結
+- 背景
+- demo 圖片
+- 字體設定
+
 ---
+
 ### firebase 相關
-* firebase掛載>>但顯示不出來
+
+- firebase 掛載>>但顯示不出來
+
 ---
+
 撰寫邏輯
-* 主要內容都在src/app.js，渲染在App.css
-* firebase相關設定資料再config.js
-* 圖片都在public/image，少數icon在src
-* icannotcode T_T
+
+- 主要內容都在 src/app.js，渲染在 App.css
+- firebase 相關設定資料再 config.js
+- 圖片都在 public/image，少數 icon 在 src
+- icannotcode T_T
