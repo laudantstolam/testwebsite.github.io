@@ -20,7 +20,8 @@ function App() {
     <div className="App">
       <div>
       <HelmetExport>
-      <link rel="icon" href="%PUBLIC_URL%/yaminerd.ico" />
+      <link rel="icon" href="%PUBLIC_URL%/yaminerd.png" />
+      {/* 使用https://favicon.io/favicon-converter/ 轉換 路徑必須放在public 下 */}
       <title>What-does-shu-say</title>
       </HelmetExport>
       </div>
