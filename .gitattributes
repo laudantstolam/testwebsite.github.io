@@ -1,0 +1,2 @@
+# 將所有文件中的換行符轉換為 LF
+* text=auto eol=lf

@@ -7,9 +7,9 @@ import yt from "./button_subscribe.png";
 // import startfirebase from './config';
 // //import {ref,set,get,update,remove,child} from 'firebase/database';
 // import 'firebase/database';
-import firebaseConfig from './config';
+import MyComponent from './firebaseconfig';
 import React, { useState, useEffect } from 'react';
-import firebase from 'firebase/compat/app';
+//import firebase from 'firebase/compat/app';
 import 'firebase/database';
 
 function App() {
@@ -23,11 +23,11 @@ function App() {
       </div>
       <div className='content'>
         <p>123,456,789</p>
+         {/* {MyComponent} */}
       </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+     
+     
+      
         <div className='footer'>
           <a href={twlink}><img src={tw} alt="icon" width={80}></img></a>
           <a href={y2link}><img src={yt} alt="icon" width={80}></img></a>
@@ -36,30 +36,4 @@ function App() {
   );
 }
 
-
-
-firebase.initializeApp(firebaseConfig);
-
-function MyComponent() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    // 監聽 '/total' 資料節點的數據
-    const dbRef = firebase.database().ref('/total');
-    dbRef.on('value', snapshot => {
-      const val = snapshot.val();
-      setData(val);
-    });
-    // 在組件解除掛載時取消監聽
-    return () => dbRef.off();
-  }, []);
-
-  return (
-    <div>
-      <h1>Realtime Database count:</h1>
-      {data && <pre>{JSON.stringify(data, null, 2)}</pre>}
-    </div>
-  );
-}
-
-export {App,MyComponent};
+export default App;
