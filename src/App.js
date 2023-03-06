@@ -8,7 +8,7 @@ import yt from "./button_subscribe.png";
 // //import {ref,set,get,update,remove,child} from 'firebase/database';
 // import 'firebase/database';
 import MyComponent from './firebaseconfig';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 //import firebase from 'firebase/compat/app';
 import 'firebase/database';
 
@@ -23,7 +23,7 @@ function App() {
       </div>
       <div className='content'>
         <p>123,456,789</p>
-         {/* {MyComponent} */}
+         {MyComponent}
       </div>
      
      
