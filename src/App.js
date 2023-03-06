@@ -23,9 +23,8 @@ function App() {
       </div>
       <div className='content'>
         <p>123,456,789</p>
-         {MyComponent}
       </div>
-     
+      {/* <MyComponent /> */}
      
       
         <div className='footer'>
