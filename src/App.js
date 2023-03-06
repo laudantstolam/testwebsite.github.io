@@ -1,4 +1,5 @@
 import './App.css';
+import HelmetExport from 'react-helmet';
 //image
 import tw from "./twittercon.png";// silly bird
 import yt from "./button_subscribe.png";
@@ -17,21 +18,22 @@ function App() {
   const y2link = "https://www.youtube.com/@ShuYamino";
   return (
     <div className="App">
-      
-      <div className="title">
-        <h4>what does Shu say</h4>
+      <div>
+      <HelmetExport>
+      <link rel="icon" href="%PUBLIC_URL%/yaminerd.ico" />
+      <title>What-does-shu-say</title>
+      </HelmetExport>
       </div>
+      
       <div className='content'>
         <p>123,456,789</p>
-        <input type='number'></input>
-        <button>commit</button>
       </div>
       {/* <MyComponent /> */}
      
       
         <footer>
-          <a href={twlink}><img src={tw} alt="icon" width={80}></img></a>
-          <a href={y2link}><img src={yt} alt="icon" width={80}></img></a>
+          <a href={twlink}><img src={tw} alt="icon" width={90}></img></a>
+          <a href={y2link}><img src={yt} alt="icon" width={90}></img></a>
         </footer>
     </div>
   );
