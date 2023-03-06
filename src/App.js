@@ -23,14 +23,16 @@ function App() {
       </div>
       <div className='content'>
         <p>123,456,789</p>
+        <input type='number'></input>
+        <button>commit</button>
       </div>
       {/* <MyComponent /> */}
      
       
-        <div className='footer'>
+        <footer>
           <a href={twlink}><img src={tw} alt="icon" width={80}></img></a>
           <a href={y2link}><img src={yt} alt="icon" width={80}></img></a>
-        </div>
+        </footer>
     </div>
   );
 }

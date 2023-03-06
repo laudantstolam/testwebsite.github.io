@@ -1,5 +1,5 @@
-// import { initializeApp } from "firebase/app";
-// import { getDatabase } from 'firebase/database';
+import { initializeApp } from "firebase/app";
+import { getDatabase } from 'firebase/database';
 import React, { useState, useEffect } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/database';
@@ -14,7 +14,7 @@ import 'firebase/database';
     appId: "1:642750880334:web:c55db6cb5f69d7a1a7011f",
     measurementId: "G-Q0N5T8XXNH"
   };
-  firebase.initializeApp(firebaseConfig);
+  initializeApp(firebaseConfig);
 
 
 

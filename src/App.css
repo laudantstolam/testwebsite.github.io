@@ -35,7 +35,10 @@ body {
   background-position: center;
 }
 
-.footer {
+footer {
+  position: fixed;
+  bottom: 0.2%;
+  width: 98%;
   text-align: right;
   padding: 0px 0px 0px 20px;
 }
