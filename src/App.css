@@ -3,6 +3,7 @@
   src: url("../public/font/shu_round.TTF");
   /* need to be ttf can't be ttc  */
 }
+
 html {
   cursor: url("../public/image/cursor.png"), auto;
   /* 尺寸需要32*32 */
@@ -22,8 +23,8 @@ body {
 }
 
 .App {
-  text-align: center;
-  
+  /* text-align: center; */
+
 }
 
 
@@ -46,4 +47,17 @@ footer {
 a {
   padding: 8px;
   cursor: url("../public/image/cursor2.png"), auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: url("../public/image/cursor2.png"), auto;
+  outline: none;
+}
+
+#target_1 {
+  position: absolute;
+  top: 175px;
+  left: 200px;
 }
