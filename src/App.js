@@ -28,7 +28,16 @@ function App() {
 
       <div className='content'>
         <button>
-          <img src="./image/t1.png" width={180} id="target_1" alt='stage1_1' />
+          <img src="./image/t1.png" width={190} id="target_1" alt='stage1_1' />
+        </button>
+        <button>
+          <img src="./image/t1_flip.png" width={210} id="target_2" alt='stage1_1' />
+        </button>
+        <button>
+          <img src="./image/t2.png" width={160} id="target_3" alt='stage1_1' />
+        </button>
+        <button>
+          <img src="./image/t3.png" width={310} id="target_4" alt='stage1_1' />
         </button>
         <house_1 />
       </div>

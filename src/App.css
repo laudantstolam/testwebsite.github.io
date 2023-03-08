@@ -61,3 +61,21 @@ button {
   top: 175px;
   left: 200px;
 }
+
+#target_2 {
+  position: absolute;
+  top: 400px;
+  left: 620px;
+}
+
+#target_3 {
+  position: absolute;
+  top: 230px;
+  left: 600px;
+}
+
+#target_4 {
+  position: absolute;
+  top: 280px;
+  left: 150px;
+}
