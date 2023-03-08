@@ -10,13 +10,15 @@
 
 ---
 
-### 3/3-3/6 已更新項目
+### 3/3-3/8 已更新項目
 
 - 滑鼠游標>大便
 - 背景
 - demo 圖片
 - 字體設定
 - footer(頁尾ICON>>shu 推特/YT 連結) 完成
+- favicon title添加
+- target 放置
 ---
 
 ### firebase 相關
