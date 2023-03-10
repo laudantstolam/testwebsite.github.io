@@ -20,7 +20,7 @@ function App() {
       </div>
 
       <div className='content'>
-        <button>
+        {/* <button>
           <img src="./image/t1.png" width={170} id="target_1" alt='stage1_1' />
         </button>
         <button>
@@ -34,7 +34,7 @@ function App() {
         </button>
         <button>
           <img src="./image/t4.png" width={190} id="target_5" alt='stage1_1' />
-        </button>
+        </button> */}
         <TEST_PAGE />
       </div>
       {/* <MyComponent /> */}
