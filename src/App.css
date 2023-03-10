@@ -19,14 +19,11 @@ body {
   font-size: 30px;
   color: #a31cc5;
   background: url("../public/image/bg.png");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.App {
-  /* text-align: center; */
-
-}
 
 
 
@@ -57,28 +54,46 @@ button {
   outline: none;
 }
 
+img {
+  /* 禁用圖像式搜索 */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard syntax */
+}
+
 #target_1 {
   position: absolute;
-  top: 175px;
-  left: 200px;
+  top: 165px;
+  left: 220px;
 }
 
 #target_2 {
   position: absolute;
-  top: 400px;
+  top: 380px;
   left: 620px;
 }
 
 #target_3 {
   position: absolute;
   top: 230px;
-  left: 600px;
+  left: 560px;
 }
 
 #target_4 {
   position: absolute;
   top: 280px;
-  left: 150px;
+  left: 50px;
+}
+
+#target_5 {
+  position: absolute;
+  top: 270px;
+  left: 870px;
 }
 
 #clickbtn {

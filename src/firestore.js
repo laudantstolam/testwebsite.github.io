@@ -9,7 +9,7 @@ import { getDocs, updateDoc, collection, doc } from "firebase/firestore";
 
 
 
-export default class Test_page extends React.Component {
+export default class TEST_PAGE extends React.Component {
     constructor(props) { // 加入建構子以及props參數
         super(props);
         this.state = {
