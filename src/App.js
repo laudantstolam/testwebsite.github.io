@@ -1,18 +1,9 @@
 import './App.css';
 import HelmetExport from 'react-helmet';
-//image
-// import tw from "./twittercon.png";// silly bird
-// import yt from "./button_subscribe.png";
-
-//firebase related
-// import startfirebase from './config';
-// //import {ref,set,get,update,remove,child} from 'firebase/database';
-// import 'firebase/database';
-import MyComponent from './firebaseconfig';
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
 //import firebase from 'firebase/compat/app';
+import Test_page from './firestore';
 import 'firebase/database';
-import house_1 from './target';
 function App() {
   const twlink = "https://twitter.com/shu_yamino";
   const y2link = "https://www.youtube.com/@ShuYamino";
@@ -39,7 +30,7 @@ function App() {
         <button>
           <img src="./image/t3.png" width={310} id="target_4" alt='stage1_1' />
         </button>
-        <house_1 />
+        <Test_page />
       </div>
       {/* <MyComponent /> */}
 

@@ -14,8 +14,9 @@ head {
 }
 
 body {
+  text-align: center;
   font-family: "huakang";
-  font-size: 40px;
+  font-size: 30px;
   color: #a31cc5;
   background: url("../public/image/bg.png");
   background-repeat: no-repeat;
@@ -78,4 +79,13 @@ button {
   position: absolute;
   top: 280px;
   left: 150px;
+}
+
+#clickbtn {
+  border: 0;
+  background-color: #5b87ce;
+  color: #fff;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
 }
