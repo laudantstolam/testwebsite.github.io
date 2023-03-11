@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 //import { Button } from 'react-bootstrap';
 import './App.css';
 // import firebase from 'firebase';
@@ -53,14 +53,25 @@ export default class TEST_PAGE extends React.Component {
 
 
     clickCount() {
+        // const [click, setclick] = this.state("block");
         const n = this.state.clickNum + 1
         this.setState({ clickNum: n });
-
-        // this.getdata();
         this.updateCount();
+        //生成一到六的隨機數字
+        const newRandomNumber = Math.floor(Math.random() * 6) + 1;
+        //把數字丟到選擇器裡面 即顯示隨機spshu
+        const show = document.querySelector('#spshu_' + newRandomNumber);
+        //把隱藏屬性block掉
+        show.style.display = 'block';
+
     }
 
-
+    // rannum = () => {
+    //     const newRandomNumber = Math.floor(Math.random() * 6) + 1;
+    //     setRandomNumber(newRandomNumber);
+    //     // 将随机数传递给函数
+    //     this.clickCount(newRandomNumber);
+    //   };
 
     render() {
         return (
@@ -88,17 +99,17 @@ export default class TEST_PAGE extends React.Component {
 
 
                 {/* 特殊shu */}
-                <img src="./image/shu_01.png" width={140} id="spshu_1" alt='spshu' />
-                <img src="./image/shu_4.png" width={120} id="spshu_2" alt='spshu' />
-                <img src="./image/shu_07.png" width={170} id="spshu_3" alt='spshu' />
+                <img src="./image/shu_01.png" style={{ display: 'none' }} width={140} id="spshu_1" alt='spshu' />
+                <img src="./image/shu_4.png" style={{ display: 'none' }} width={120} id="spshu_2" alt='spshu' />
+                <img src="./image/shu_07.png" style={{ display: 'none' }} width={170} id="spshu_3" alt='spshu' />
 
                 <button onClick={() => this.clickCount()}>
                     <img src="./image/t4.png" width={190} id="target_5" alt='stage1_1' />
                 </button>
 
-                <img src="./image/shu_10.png" width={240} id="spshu_4" alt='spshu' />
-                <img src="./image/shu_15.png" width={135} id="spshu_5" alt='spshu' />
-                <img src="./image/shu_28.png" width={130} id="spshu_6" alt='spshu' />
+                <img src="./image/shu_10.png" style={{ display: 'none' }} width={240} id="spshu_4" alt='spshu' />
+                <img src="./image/shu_15.png" style={{ display: 'none' }} width={135} id="spshu_5" alt='spshu' />
+                <img src="./image/shu_28.png" style={{ display: 'none' }} width={130} id="spshu_6" alt='spshu' />
             </div>
 
         )
