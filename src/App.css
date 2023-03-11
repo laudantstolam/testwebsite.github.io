@@ -26,7 +26,7 @@ body {
 
 
 
-
+/* 設定背景 */
 .bg {
   background-image: url(../public/image/bg.png);
   background-size: "cover";
@@ -42,11 +42,13 @@ footer {
   padding: 0px 0px 0px 20px;
 }
 
+/* 有聯結的 */
 a {
   padding: 8px;
   cursor: url("../public/image/cursor2.png"), auto;
 }
 
+/* 按鈕 */
 button {
   background-color: transparent;
   border: none;
@@ -66,6 +68,7 @@ img {
   /* Standard syntax */
 }
 
+/* target即房屋，各自指定絕對位置 */
 #target_1 {
   position: absolute;
   top: 165px;
@@ -81,7 +84,7 @@ img {
 #target_3 {
   position: absolute;
   top: 230px;
-  left: 560px;
+  left: 550px;
 }
 
 #target_4 {
@@ -92,8 +95,8 @@ img {
 
 #target_5 {
   position: absolute;
-  top: 270px;
-  left: 870px;
+  top: 250px;
+  left: 815px;
 }
 
 #clickbtn {
@@ -103,4 +106,46 @@ img {
   border-radius: 10px;
   width: 100px;
   height: 30px;
+}
+
+/* shu的圖像不會變成扁掉的大便 */
+img[alt*="shu"] {
+  cursor: url("../public/image/cursor.png"), auto;
+}
+
+/* 特殊版的shu */
+#spshu_1 {
+  position: absolute;
+  top: 140px;
+  left: 550px;
+}
+
+#spshu_2 {
+  position: absolute;
+  top: 230px;
+  left: 170px;
+}
+
+#spshu_3 {
+  position: absolute;
+  top: 280px;
+  left: 927px;
+}
+
+#spshu_4 {
+  position: absolute;
+  top: 350px;
+  left: 115px;
+}
+
+#spshu_5 {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+#spshu_6 {
+  position: absolute;
+  top: 450px;
+  left: 710px;
 }

@@ -4,11 +4,16 @@ import HelmetExport from 'react-helmet';
 //import firebase from 'firebase/compat/app';
 import TEST_PAGE from './Firestore';
 import 'firebase/database';
+import { useEffect } from 'react';
+import { toast } from 'react-toastify';
 
 
 function App() {
   const twlink = "https://twitter.com/shu_yamino";
   const y2link = "https://www.youtube.com/@ShuYamino";
+  useEffect(() => {
+    toast.info('Eyyyyyy welcome to what-does-Shu-say, have fun');
+  }, []);
   return (
     <div className="App">
       <div>
