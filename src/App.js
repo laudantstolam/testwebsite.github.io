@@ -2,7 +2,7 @@ import './App.css';
 import HelmetExport from 'react-helmet';
 //import React, { useState } from 'react';
 //import firebase from 'firebase/compat/app';
-import TEST_PAGE from './Firestore';
+import TEST_PAGE from './firestore';
 import 'firebase/database';
 // import { useEffect } from 'react';
 // import { toast } from 'react-toastify';
