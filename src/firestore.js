@@ -66,12 +66,39 @@ export default class TEST_PAGE extends React.Component {
         return (
             <div className="mainText">
                 {console.log("this.state.clickNum:", this.state.clickNum)}
-                <p>clickNum: {this.state.clickNum}</p>
-                <button id='clickbtn' onClick={() => this.clickCount()}>Click</button> <br />
-
+                {/* <p>clickNum: {this.state.clickNum}</p> */}
                 {console.log("this.state.totalCount:", this.state.totalCount)}
-                <p>totalCount: {this.state.totalCount}</p>
+                <p>clickNum: {this.state.clickNum} ,totalCount: {this.state.totalCount}</p>
                 {console.log("=========")}
+                <button id='clickbtn' onClick={() => this.clickCount()}>Click</button>
+
+
+                <button onClick={() => this.clickCount()}>
+                    <img src="./image/t1.png" width={170} id="target_1" alt='stage1_1' />
+                </button>
+                <button onClick={() => this.clickCount()}>
+                    <img src="./image/t1_flip.png" width={190} id="target_2" alt='stage1_1' />
+                </button>
+                <button onClick={() => this.clickCount()}>
+                    <img src="./image/t2.png" width={140} id="target_3" alt='stage1_1' />
+                </button>
+                <button onClick={() => this.clickCount()}>
+                    <img src="./image/t3.png" width={270} id="target_4" alt='stage1_1' />
+                </button>
+
+
+                {/* 特殊shu */}
+                <img src="./image/shu_01.png" width={140} id="spshu_1" alt='spshu' />
+                <img src="./image/shu_4.png" width={120} id="spshu_2" alt='spshu' />
+                <img src="./image/shu_07.png" width={170} id="spshu_3" alt='spshu' />
+
+                <button onClick={() => this.clickCount()}>
+                    <img src="./image/t4.png" width={190} id="target_5" alt='stage1_1' />
+                </button>
+
+                <img src="./image/shu_10.png" width={240} id="spshu_4" alt='spshu' />
+                <img src="./image/shu_15.png" width={135} id="spshu_5" alt='spshu' />
+                <img src="./image/shu_28.png" width={130} id="spshu_6" alt='spshu' />
             </div>
 
         )
