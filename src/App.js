@@ -15,15 +15,8 @@ function App() {
   //   toast.info('Eyyyyyy welcome to what-does-Shu-say, have fun');
   // }, []);
   // popup stting
-  const [showPopup, setShowPopup] = useState(false);
+  const [buttonPopup, setButtonPopup] = useState(false);
 
-  const handleShowPopup = () => {
-    setShowPopup(true);
-  };
-
-  const handleClosePopup = () => {
-    setShowPopup(false);
-  };
   return (
     <div className="App">
       <div>
@@ -36,19 +29,15 @@ function App() {
       </div>
 
       <div className='content'>
-
-        <div className='popuppage'>
-          <div className='popupcontent'>
-            <button onClick={handleShowPopup}><img src="./image/usb.png" width={70} id="collect" alt='collector' /></button>
-            {showPopup && (
-              <Popup onClose={handleClosePopup} />
-            )}
-          </div>
-
-        </div>
         <TEST_PAGE />
+        <button><img src="./image/savepoint.png" onClick={() => setButtonPopup(true)} width={80} id="collect" alt='collector' /></button>
+
+        <Popup position="top center" trigger={buttonPopup} setTrigger={setButtonPopup}>
+          <h1>testing shu collection</h1>
+          <p>idk</p>
+        </Popup>
       </div>
-      {/* <MyComponent /> */}
+
 
 
       <footer>
