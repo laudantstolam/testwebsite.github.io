@@ -19,17 +19,13 @@
 - footer(頁尾ICON>>shu 推特/YT 連結) 完成
 - favicon title添加
 - target 放置
----
-
-### firebase 相關
-
-- firebase 掛載>>但顯示不出來
-
+- 隨機生成shu
+- 彈出視窗
 ---
 
 撰寫邏輯
 
 - 主要內容都在 src/app.js，渲染在 App.css
-- firebase 相關設定資料再 config.js
-- 圖片都在 public/image，少數 icon 在 src
+- firebase 相關設定資料在 firebaseconfig.js
+- 圖片都在 public/image
 - icannotcode T_T

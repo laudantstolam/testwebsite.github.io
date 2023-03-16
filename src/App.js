@@ -1,12 +1,12 @@
 import './App.css';
 import HelmetExport from 'react-helmet';
-//import React, { useState } from 'react';
+import { useState } from 'react';
 //import firebase from 'firebase/compat/app';
 import TEST_PAGE from './firestore';
 import 'firebase/database';
 // import { useEffect } from 'react';
 // import { toast } from 'react-toastify';
-
+import Popup from './popup';
 
 function App() {
   const twlink = "https://twitter.com/shu_yamino";
@@ -14,6 +14,16 @@ function App() {
   // useEffect(() => {
   //   toast.info('Eyyyyyy welcome to what-does-Shu-say, have fun');
   // }, []);
+  // popup stting
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleShowPopup = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <div className="App">
       <div>
@@ -22,6 +32,7 @@ function App() {
           {/* 使用https://favicon.io/favicon-converter/ 轉換 路徑必須放在public 下 */}
           <title>What-does-shu-say</title>
         </HelmetExport>
+
       </div>
 
       <div className='content'>
@@ -41,6 +52,14 @@ function App() {
           <img src="./image/t4.png" width={190} id="target_5" alt='stage1_1' />
         </button> */}
         <TEST_PAGE />
+        <div className='popuppage'>
+          <div className='popupcontent'>
+            <button onClick={handleShowPopup}><img src="./image/usb.png" width={70} id="collect" alt='collector' /></button>
+            {showPopup && (
+              <Popup onClose={handleClosePopup} />
+            )}
+          </div>
+        </div>
       </div>
       {/* <MyComponent /> */}
 

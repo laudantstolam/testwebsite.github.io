@@ -30,7 +30,7 @@ export default class TEST_PAGE extends React.Component {
             }));
             console.log("fireBase_Data:", filterData[0].TotalCount);
             this.setState({ totalCount: filterData[0].TotalCount });
-            this.setState({isLoaded:true});
+            this.setState({ isLoaded: true });
         } catch (err) {
             console.error(err);
         }
@@ -77,7 +77,7 @@ export default class TEST_PAGE extends React.Component {
     //   };
 
     render() {
-        const {isLoaded} = this.state;
+        const { isLoaded } = this.state;
         if (isLoaded) {
             return (
                 <div className="mainText">
