@@ -7,6 +7,7 @@ import 'firebase/database';
 // import { useEffect } from 'react';
 // import { toast } from 'react-toastify';
 import Popup from './popup';
+import ScrollableModal from './scroll';
 
 function App() {
   const twlink = "https://twitter.com/shu_yamino";
@@ -29,13 +30,13 @@ function App() {
       </div>
 
       <div className='content'>
-        <TEST_PAGE />
-        <button><img src="./image/savepoint.png" onClick={() => setButtonPopup(true)} width={80} id="collect" alt='collector' /></button>
 
-        <Popup position="top center" trigger={buttonPopup} setTrigger={setButtonPopup}>
-          <h1>testing shu collection</h1>
-          <p>idk</p>
-        </Popup>
+        <TEST_PAGE />
+
+        {/* popup page */}
+        <button><img src="./image/savepoint.png" onClick={() => setButtonPopup(true)} width={80} id="collect" alt='collector' /></button>
+        <Popup position="top center" trigger={buttonPopup} setTrigger={setButtonPopup} />
+        {/* <ScrollableModal /> */}
       </div>
 
 

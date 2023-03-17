@@ -161,18 +161,25 @@ img[alt*="shu"] {
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
 }
 
 .popup-content {
   position: relative;
-  padding: 32px;
-  width: 100%;
-  max-width: 640px;
+  padding: 10px;
+  border-radius: 20px;
+  /* width: 100%; */
+  /* max-width: 640px; */
   background-color: #fff;
+  overflow-y: auto;
+}
+
+.popup-content p {
+  font-size: medium;
 }
