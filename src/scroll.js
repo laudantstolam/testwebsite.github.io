@@ -14,16 +14,19 @@ function ScrollableModal() {
                 <img src="./image/savepoint.png" width={80} id="collect" alt='collector' />
             </Button>
 
-            <Modal show={show} onHide={handleClose} scrollable>
+            <Modal show={show} onHide={handleClose} scrollable id='scroll'>
                 <Modal.Header closeButton>
                     <Modal.Title>lez see how many Shu u've got</Modal.Title>
                 </Modal.Header>
-                <Modal.Body id='test'>
-                    <div style={{ height: '200px', overflowY: 'auto' }}>
+                <Modal.Body id='scrollcontent'>
+                    {/* <div style={{ height: '200px', overflowY: 'auto' }}>
                         {[...Array(50)].map((_, i) => (
                             <p key={i}>Scrollable Content {i}</p>
                         ))}
-                    </div>
+                    </div> */}
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>

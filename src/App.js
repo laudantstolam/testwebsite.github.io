@@ -34,9 +34,9 @@ function App() {
         <TEST_PAGE />
 
         {/* popup page */}
-        <button><img src="./image/savepoint.png" onClick={() => setButtonPopup(true)} width={80} id="collect" alt='collector' /></button>
-        <Popup position="top center" trigger={buttonPopup} setTrigger={setButtonPopup} />
-        {/* <ScrollableModal /> */}
+        {/* <button><img src="./image/savepoint.png" onClick={() => setButtonPopup(true)} width={80} id="collect" alt='collector' /></button>
+        <Popup position="top center" trigger={buttonPopup} setTrigger={setButtonPopup} /> */}
+        <ScrollableModal />
       </div>
 
 
