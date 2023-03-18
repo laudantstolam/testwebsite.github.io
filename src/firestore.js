@@ -65,9 +65,7 @@ export default class TEST_PAGE extends React.Component {
         //把數字丟到選擇器裡面 即顯示隨機spshu
         const show = document.querySelector('#spshu_' + newRandomNumber);
         //把randomnumber傳入audio找到對應
-        const handleClick = () => {
-            playSound(newRandomNumber);
-        }
+        playSound(newRandomNumber);
 
         //把隱藏屬性block掉
         show.style.display = 'block';
