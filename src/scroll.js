@@ -30,7 +30,7 @@ function ScrollableModal() {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
-                        <img src='./image/button_onoff1.png' width={60} alt='popoff' id='popoff' />
+                        <img src='./image/buttin_off.png' width={70} alt='popoff' id='popoff' />
                     </Button>
                 </Modal.Footer>
             </Modal>
