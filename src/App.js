@@ -1,13 +1,15 @@
 import './App.css';
 import HelmetExport from 'react-helmet';
-import { useState } from 'react';
+// import { useState } from 'react';
 //import firebase from 'firebase/compat/app';
 import TEST_PAGE from './firestore';
 import 'firebase/database';
 // import { useEffect } from 'react';
 // import { toast } from 'react-toastify';
-import Popup from './popup';
+// import Popup from './popup';使用react寫法的popuppage
 import ScrollableModal from './scroll';
+//提示訊息
+import AlertMessage from './alert';
 
 function App() {
   const twlink = "https://twitter.com/shu_yamino";
@@ -16,17 +18,16 @@ function App() {
   //   toast.info('Eyyyyyy welcome to what-does-Shu-say, have fun');
   // }, []);
   // popup stting
-  const [buttonPopup, setButtonPopup] = useState(false);
+  // const [buttonPopup, setButtonPopup] = useState(false); 使用react寫法的時候再啟用
 
   return (
     <div className="App">
       <div>
         <HelmetExport>
-          <link rel="icon" href="%PUBLIC_URL%/yaminerd.png" />
+          {/* <link rel="icon" href="%PUBLIC_URL%/yaminerd.png" /> */}
           {/* 使用https://favicon.io/favicon-converter/ 轉換 路徑必須放在public 下 */}
           <title>What-does-shu-say</title>
         </HelmetExport>
-
       </div>
 
       <div className='content'>
@@ -39,11 +40,11 @@ function App() {
         <ScrollableModal />
       </div>
 
-
+      <AlertMessage />
 
       <footer>
-        <a href={twlink}><img src='./image/twittercon.png' alt="icon" width={90}></img></a>
-        <a href={y2link}><img src='./image/button_subscribe.png' alt="icon" width={90}></img></a>
+        <a href={twlink} target="_blank" rel="noopener noreferrer"><img src='./image/twittercon.png' alt="icon" width={90}></img></a>
+        <a href={y2link} target="_blank" rel="noopener noreferrer"><img src='./image/button_subscribe.png' alt="icon" width={90}></img></a>
       </footer>
     </div>
   );

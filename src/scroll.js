@@ -27,6 +27,14 @@ function ScrollableModal() {
                     <img src='./image/lock.png' width={60} alt='lockicon' />
                     <img src='./image/lock.png' width={60} alt='lockicon' />
                     <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <br />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                    <img src='./image/lock.png' width={60} alt='lockicon' />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>

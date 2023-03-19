@@ -20,7 +20,14 @@
 - favicon title添加
 - target 放置
 - 隨機生成shu
+
+### 3/12-3/18 已更新項目
 - 彈出視窗
+- 彈出視窗改為bootstrap可滾動式視窗
+- 隨機生成shu配上對應音效(特殊shu*6)
+- 連結在新分頁中開啟
+- favicon的路徑問題解決
+- 壓縮部分圖片加快網頁加載速度
 ---
 
 撰寫邏輯
@@ -28,4 +35,5 @@
 - 主要內容都在 src/app.js，渲染在 App.css
 - firebase 相關設定資料在 firebaseconfig.js
 - 圖片都在 public/image
+- 彈出視窗(popuppage)定義了兩種寫法，目前採用bootatrap(參考scroll.js)，另一種react寫法在(popup.js)
 - icannotcode T_T
