@@ -10,6 +10,7 @@ import { playSound } from './audio';
 
 
 
+
 export default class TEST_PAGE extends React.Component {
     constructor(props) { // 加入建構子以及props參數
         super(props);
@@ -17,6 +18,7 @@ export default class TEST_PAGE extends React.Component {
             clickNum: 0,
             // totalCount:null,
             isLoaded: false,
+            num: null,//紀錄randomnum用的
         }
     }
 
@@ -60,16 +62,28 @@ export default class TEST_PAGE extends React.Component {
         const n = this.state.clickNum + 1
         this.setState({ clickNum: n });
         this.updateCount();
-        //生成一到六的隨機數字
+        // 生成一到六的隨機數字
         const newRandomNumber = Math.floor(Math.random() * 6) + 1;
-        //把數字丟到選擇器裡面 即顯示隨機spshu
-        const show = document.querySelector('#spshu_' + newRandomNumber);
-        //把randomnumber傳入audio找到對應
+        // 取得前一次更新的 state
+        const { num } = this.state;
+        // 如果 num 不是 null，代表這不是第一次觸發函式
+        if (num !== null) {
+            // 把前一次的隱藏
+            document.querySelector('#spshu_' + num).style.display = 'none';
+        }
+        //更新新的state
+        this.setState({
+            num: newRandomNumber,
+        });
+
+        if (newRandomNumber < 7) {
+            //把數字丟到選擇器裡面 即顯示隨機spshu
+            document.querySelector('#spshu_' + newRandomNumber).style.display = 'block';
+            //把randomnumber傳入audio找到對應
+        }
         playSound(newRandomNumber);
 
-        //把隱藏屬性block掉
-        show.style.display = 'block';
-
+        this.setState({ num: newRandomNumber })
     }
 
     // rannum = () => {
@@ -84,6 +98,8 @@ export default class TEST_PAGE extends React.Component {
         if (isLoaded) {
             return (
                 <div className="mainText">
+                    {/* 測試用 之後會刪掉 */}
+                    <h2>rightnow={this.state.num}</h2>
                     {console.log("this.state.clickNum:", this.state.clickNum)}
                     {/* <p>clickNum: {this.state.clickNum}</p> */}
                     {console.log("this.state.totalCount:", this.state.totalCount)}
@@ -118,6 +134,11 @@ export default class TEST_PAGE extends React.Component {
                     <img src="./image/shu_10.png" style={{ display: 'none' }} width={240} id="spshu_4" alt='spshu' />
                     <img src="./image/shu_15.png" style={{ display: 'none' }} width={135} id="spshu_5" alt='spshu' />
                     <img src="./image/shu_28.png" style={{ display: 'none' }} width={130} id="spshu_6" alt='spshu' />
+                    {/* 一般shu */}
+                    <img src="./image/norshu_1.png" style={{ display: 'none' }} width={70} id="norshu_1" alt='norshu' />
+                    <img src="./image/norshu_2.png" style={{ display: 'none' }} width={93} id="norshu_2" alt='norshu' />
+                    <img src="./image/norshu_3.png" style={{ display: 'none' }} width={70} id="norshu_3" alt='norshu' />
+                    <img src="./image/norshu_4.png" style={{ display: 'none' }} width={60} id="norshu_4" alt='norshu' />
                 </div>
 
             )

@@ -150,6 +150,31 @@ img[alt*="shu"] {
   left: 710px;
 }
 
+/* 一般shu 位置未定 */
+#norshu_1 {
+  position: absolute;
+  top: 180px;
+  left: 170px;
+}
+
+#norshu_2 {
+  position: absolute;
+  top: 370px;
+  left: 230px;
+}
+
+#norshu_3 {
+  position: absolute;
+  top: 130px;
+  left: 850px;
+}
+
+#norshu_4 {
+  position: absolute;
+  top: 450px;
+  left: 600px;
+}
+
 /* popup page */
 #collect {
   position: absolute;
