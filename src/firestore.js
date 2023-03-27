@@ -1,13 +1,13 @@
 import React from 'react'
 // import {useState} from 'react'
-//import { Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import './App.css';
 // import firebase from 'firebase';
 // import FireBaseConfig from './FireBaseConfig';
 import { db } from "./firebaseconfig";
 import { getDocs, updateDoc, collection, doc } from "firebase/firestore";
 import { playSound } from './audio';
-
+import ScrollableModal from './scroll.js';
 
 
 
@@ -19,7 +19,21 @@ export default class TEST_PAGE extends React.Component {
             // totalCount:null,
             isLoaded: false,
             num: null,//紀錄randomnum用的
+            voice_id:[],
+            show:false,
         }
+        this.handleClose = this.handleClose.bind(this);
+        this.handleShow = this.handleShow.bind(this);
+    }
+
+    handleShow(){
+        this.setState({ show: true });
+        // console.log("this.state.show:",this.state.show)
+    }
+
+    handleClose(){
+        this.setState({ show: false });
+        // console.log("this.state.show:",this.state.show)
     }
 
 
@@ -84,6 +98,11 @@ export default class TEST_PAGE extends React.Component {
         playSound(newRandomNumber);
 
         this.setState({ num: newRandomNumber })
+
+        //儲存voice變數
+        this.setState(prevState => ({
+            voice_id: [...new Set([...prevState.voice_id, newRandomNumber])]
+          }));
     }
 
     // rannum = () => {
@@ -139,6 +158,19 @@ export default class TEST_PAGE extends React.Component {
                     <img src="./image/norshu_2.png" style={{ display: 'none' }} width={93} id="norshu_2" alt='norshu' />
                     <img src="./image/norshu_3.png" style={{ display: 'none' }} width={70} id="norshu_3" alt='norshu' />
                     <img src="./image/norshu_4.png" style={{ display: 'none' }} width={60} id="norshu_4" alt='norshu' />
+                
+
+                    {/* 集點功能 */}
+                    <Button variant="primary" onClick={this.handleShow}>
+                            <img src="./image/savepoint.png" width={80} id="collect" alt='collector' />
+                    </Button>
+
+                    <ScrollableModal 
+                            voice_id={this.state.voice_id} 
+                            show={this.state.show} 
+                            onHide={this.handleClose}
+                    />
+                
                 </div>
 
             )
