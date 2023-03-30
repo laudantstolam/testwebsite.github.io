@@ -72,7 +72,7 @@ export default class TEST_PAGE extends React.Component {
     this.setState({ clickNum: n });
     this.updateCount();
     // 生成一到六的隨機數字
-    const newRandomNumber = Math.floor(Math.random() * 12) + 1;
+    const newRandomNumber = Math.floor(Math.random() * 6) + 1;
     const shu1to4 = Math.floor(Math.random() * 4) + 1;
     // 取得前一次更新的 state
     const { num } = this.state;
@@ -126,7 +126,7 @@ export default class TEST_PAGE extends React.Component {
         <div className="mainText">
           {/* 測試用 之後會刪掉 */}
           <h2>
-            rightnow={this.state.num}normalshu={this.state.normalshu}
+            rightnow={this.state.num} normalshu={this.state.normalshu}
           </h2>
           {console.log("this.state.clickNum:", this.state.clickNum)}
           {/* <p>clickNum: {this.state.clickNum}</p> */}
@@ -137,122 +137,123 @@ export default class TEST_PAGE extends React.Component {
           {console.log("=========")}
           {/* <button id='clickbtn' onClick={() => this.clickCount()}>Click</button> */}
 
-          <button onClick={() => this.clickCount()}>
+          <div className="main_components">
+            <button onClick={() => this.clickCount()}>
+              <img
+                src="./image/t1.png"
+                width={170}
+                id="target_1"
+                alt="stage1_1"
+              />
+            </button>
+            <button onClick={() => this.clickCount()}>
+              <img
+                src="./image/t1_flip.png"
+                width={190}
+                id="target_2"
+                alt="stage1_1"
+              />
+            </button>
+            <button onClick={() => this.clickCount()}>
+              <img
+                src="./image/t2.png"
+                width={140}
+                id="target_3"
+                alt="stage1_1"
+              />
+            </button>
+            <button onClick={() => this.clickCount()}>
+              <img
+                src="./image/t3.png"
+                width={270}
+                id="target_4"
+                alt="stage1_1"
+              />
+            </button>
+
+            {/* 特殊shu */}
             <img
-              src="./image/t1.png"
-              width={170}
-              id="target_1"
-              alt="stage1_1"
-            />
-          </button>
-          <button onClick={() => this.clickCount()}>
-            <img
-              src="./image/t1_flip.png"
-              width={190}
-              id="target_2"
-              alt="stage1_1"
-            />
-          </button>
-          <button onClick={() => this.clickCount()}>
-            <img
-              src="./image/t2.png"
+              src="./image/shu_01.png"
+              style={{ display: "none" }}
               width={140}
-              id="target_3"
-              alt="stage1_1"
+              id="spshu_1"
+              alt="spshu"
             />
-          </button>
-          <button onClick={() => this.clickCount()}>
             <img
-              src="./image/t3.png"
-              width={270}
-              id="target_4"
-              alt="stage1_1"
+              src="./image/shu_4.png"
+              style={{ display: "none" }}
+              width={120}
+              id="spshu_2"
+              alt="spshu"
             />
-          </button>
-
-          {/* 特殊shu */}
-          <img
-            src="./image/shu_01.png"
-            style={{ display: "none" }}
-            width={140}
-            id="spshu_1"
-            alt="spshu"
-          />
-          <img
-            src="./image/shu_4.png"
-            style={{ display: "none" }}
-            width={120}
-            id="spshu_2"
-            alt="spshu"
-          />
-          <img
-            src="./image/shu_07.png"
-            style={{ display: "none" }}
-            width={170}
-            id="spshu_3"
-            alt="spshu"
-          />
-
-          <button onClick={() => this.clickCount()}>
             <img
-              src="./image/t4.png"
-              width={190}
-              id="target_5"
-              alt="stage1_1"
+              src="./image/shu_07.png"
+              style={{ display: "none" }}
+              width={170}
+              id="spshu_3"
+              alt="spshu"
             />
-          </button>
 
-          <img
-            src="./image/shu_10.png"
-            style={{ display: "none" }}
-            width={240}
-            id="spshu_4"
-            alt="spshu"
-          />
-          <img
-            src="./image/shu_15.png"
-            style={{ display: "none" }}
-            width={135}
-            id="spshu_5"
-            alt="spshu"
-          />
-          <img
-            src="./image/shu_28.png"
-            style={{ display: "none" }}
-            width={130}
-            id="spshu_6"
-            alt="spshu"
-          />
-          {/* 一般shu */}
-          <img
-            src="./image/norshu_1.png"
-            style={{ display: "none" }}
-            width={70}
-            id="norshu_1"
-            alt="norshu"
-          />
-          <img
-            src="./image/norshu_2.png"
-            style={{ display: "none" }}
-            width={93}
-            id="norshu_2"
-            alt="norshu"
-          />
-          <img
-            src="./image/norshu_3.png"
-            style={{ display: "none" }}
-            width={70}
-            id="norshu_3"
-            alt="norshu"
-          />
-          <img
-            src="./image/norshu_4.png"
-            style={{ display: "none" }}
-            width={60}
-            id="norshu_4"
-            alt="norshu"
-          />
+            <button onClick={() => this.clickCount()}>
+              <img
+                src="./image/t4.png"
+                width={190}
+                id="target_5"
+                alt="stage1_1"
+              />
+            </button>
 
+            <img
+              src="./image/shu_10.png"
+              style={{ display: "none" }}
+              width={200}
+              id="spshu_4"
+              alt="spshu"
+            />
+            <img
+              src="./image/shu_15.png"
+              style={{ display: "none" }}
+              width={135}
+              id="spshu_5"
+              alt="spshu"
+            />
+            <img
+              src="./image/shu_28.png"
+              style={{ display: "none" }}
+              width={130}
+              id="spshu_6"
+              alt="spshu"
+            />
+            {/* 一般shu */}
+            <img
+              src="./image/norshu_1.png"
+              style={{ display: "none" }}
+              width={70}
+              id="norshu_1"
+              alt="norshu"
+            />
+            <img
+              src="./image/norshu_2.png"
+              style={{ display: "none" }}
+              width={93}
+              id="norshu_2"
+              alt="norshu"
+            />
+            <img
+              src="./image/norshu_3.png"
+              style={{ display: "none" }}
+              width={70}
+              id="norshu_3"
+              alt="norshu"
+            />
+            <img
+              src="./image/norshu_4.png"
+              style={{ display: "none" }}
+              width={60}
+              id="norshu_4"
+              alt="norshu"
+            />
+          </div>
           {/* 集點功能 */}
           <Button variant="primary" onClick={this.handleShow}>
             <img
