@@ -66,7 +66,9 @@ img {
   user-select: none;
   /* Standard syntax */
 }
-@media screen and (min-width: 1000px) {
+
+@media screen and (min-width: 1200px) {
+
   /* 在屏幕宽度大等于1000px时应用的样式 */
   .main_components {
     position: relative;
@@ -80,56 +82,67 @@ img {
     margin-top: -3%;
     width: 16%;
   }
+
   #target_2,
   #spshu_6 {
     margin-left: -3%;
     margin-top: 1%;
     width: 17%;
   }
+
   #target_3,
   #spshu_1 {
     margin-left: -4%;
     margin-top: -4%;
     width: 14%;
   }
+
   #target_4,
   #spshu_4 {
     margin-left: -20%;
     margin-top: -1%;
     width: 27%;
   }
+
   #target_5,
   #spshu_3 {
     margin-left: 7%;
     margin-top: -1%;
     width: 17%;
   }
+
   #spshu_5 {
     margin-left: -17%;
     margin-top: -9%;
     width: 14.5%;
   }
+
   #spshu_1 {
     margin-top: -5.7%;
   }
+
   #spshu_6 {
     margin-top: -2%;
   }
+
   #norshu_1 {
     transform: rotate(-15deg);
     margin-left: -10%;
     width: 7%;
   }
+
   #norshu_2 {
     margin-left: -25%;
     margin-top: auto;
     width: 9%;
   }
+
   #norshu_3 {
     margin-left: 8%;
     margin-top: -8.7%;
     width: 9%;
   }
+
   #norshu_4 {
     margin-left: -7%;
     margin-top: -3%;
@@ -203,7 +216,7 @@ img[alt*="shu"] {
 
 #spshu_4 {
   position: absolute;
-  top: 350px;
+  top: 390px;
   left: 115px;
 }
 
@@ -303,7 +316,8 @@ img[alt*="shu"] {
 
 .lockicon {
   position: relative;
-  display: inline-block; /*並排*/
+  display: inline-block;
+  /*並排*/
   padding: 10px;
   margin: 10px;
 }
