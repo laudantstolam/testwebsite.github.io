@@ -68,7 +68,6 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-
   /* 在屏幕宽度大等于1000px时应用的样式 */
   .main_components {
     position: relative;
@@ -147,6 +146,9 @@ img {
     margin-left: -7%;
     margin-top: -3%;
     width: 9%;
+  }
+  #collect {
+    width: 8%;
   }
 }
 
@@ -348,8 +350,9 @@ img[alt*="shu"] {
 #alertpage {
   margin-top: 7%;
   margin-left: 35%;
-  width: 300px;
-  height: 100px;
+  padding: 1.2%;
+  width: 500px;
+  height: 250px;
   border-radius: 20px;
   position: relative;
   background-color: #fff;
