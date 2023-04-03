@@ -6,7 +6,7 @@ import './App.css';
 function ScrollableModal(props) {
     const [show, setShow] = useState(false);
     const [getVoiceNo,setGetVoiceNo] = useState([2])
-    const [allVoiceNo] = useState(Array.from({length: 10}, (_, i) => i+1))
+    const [allVoiceNo] = useState(Array.from({length: 30}, (_, i) => i+1))
     const [csvdata,setCsvdata] = useState(null)
     const [voice_id2, setVoiceId2 ] = useState(null);
     // const [voice_test, setVoiceIdtest ] = useState();

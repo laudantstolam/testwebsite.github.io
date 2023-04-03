@@ -72,7 +72,7 @@ export default class TEST_PAGE extends React.Component {
     this.setState({ clickNum: n });
     this.updateCount();
     // 生成一到六的隨機數字
-    const newRandomNumber = Math.floor(Math.random() * 6) + 1;
+    const newRandomNumber = Math.floor(Math.random() * 30) + 1;
     const shu1to4 = Math.floor(Math.random() * 4) + 1;
     // 取得前一次更新的 state
     const { num } = this.state;
