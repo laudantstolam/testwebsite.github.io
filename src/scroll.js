@@ -54,7 +54,7 @@ function ScrollableModal(props) {
                     <Modal.Title>lez see how many Shu u've got</Modal.Title>
                 </Modal.Header>
                 <Modal.Body id='scrollcontent'>
-                    <div id='scrollitem' style={{ height: '300px',width: '600px', overflowY: 'auto' }}>
+                    <div id='scrollitem' style={{ height: '300px',width: '600px', overflowY: 'auto',  padding: '0px 60px 20px 60px' }}>
                     {/* <div style={{ height: '300px',width: '600px', overflowY: 'auto' }}>
                         {[...Array(50)].map((_, i) => (
                             <p key={i}>Scrollable Content {i}</p>

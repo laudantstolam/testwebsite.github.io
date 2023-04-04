@@ -312,7 +312,8 @@ img[alt*="shu"] {
   border-radius: 20px;
   /* width: 100%; */
   /* max-width: 640px; */
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-image: url('../public/image/BG3.png');
   overflow-y: auto;
 }
 
