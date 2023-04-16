@@ -78,11 +78,19 @@ function ScrollableModal(props) {
                             </div>
                         )
                     }else{
-                        return(
-                            <div class='lockicon' key={i}>
-                                <img src='./image/lock.png' width={60} alt='lockicon' />
-                            </div>
-                            )
+                        if([1, 3, 5].includes(i)){ //sp改成不同顏色
+                            return(
+                                <div class='lockicon' key={i}>
+                                    <img src='./image/lock_sp.png' width={60} alt='lockicon' />
+                                </div>
+                                )
+                        }else{
+                            return(
+                                <div class='lockicon' key={i}>
+                                    <img src='./image/lock.png' width={60} alt='lockicon' />
+                                </div>
+                                )
+                        }
                     }})}
 
                         
