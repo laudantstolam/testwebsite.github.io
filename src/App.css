@@ -340,10 +340,11 @@ img[alt*="shu"] {
   top: 40px;
   left: 50px;
   width: 130px;
-  height: 100px;
+  height: 80px;
   font-size: 0.5em;
-  background: #4b95a3;
-  padding: 5px;
+  /* background: #4b95a3; */
+  background: #60beb9f6;
+  padding: 10px 0px 0px 0px;
   border-radius: 5px;
   z-index: 1;
 }
